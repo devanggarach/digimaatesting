@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css?family=Impact');
+
+/* 
+.v_center
+used in admin login page to get card vertically and horizontally center
+last code edited by - Devang
+last modified date - 4th May, 2020
+*/
+.v_center {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+/* modified carousel-item of bootstrap css
+last code edited by - Devang
+last modified date - 4th May, 2020
+ */
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+}
+
+/* footer 1 & footer 2
+last code edited by - Devang
+last modified date - 4th May, 2020
+ */
+.footer__contact{
+  background-color:#790000;
+  text-transform: uppercase;
+  color: #fff;
+}
+.footer__contact--center{
+  text-align-last: center;
+  font-weight: 900;
+}
+.footer__contact--last{
+    position: absolute;
+    right: 20px;
+    top: 0px;  
+}
+.footer__contact--last>a{
+  color: #fff;
+  padding: 5px;
+}
+footer>.footer__content{
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.footer__info{
+  background-color:#696969;
+}
+.footer__info--center{
+  color:#DCDCDC;
+  text-align-last: center;
+}
+.footer__info--center>p{
+  margin: 0;
+  font-size: x-small;
+}
+
+/* 
+each section with full width of screen view
+last code edited by - Devang
+last modified date - 4th May, 2020
+*/
+/* section { height: 100vh; } */
+
+/* 
+quick easy
+last code edited by - Devang
+last modified date - 5th May, 2020
+*/
+.uppercase{
+  text-transform: uppercase;
+}
+
+.bold_text{
+  font-weight: 900;
+}
+.card-img-top{
+  height: 250px;
+}
+.red__text{
+  color:#790000;
+  font-size: x-large;
+}
+.head_text{
+  color:grey;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 3px;
+}
+.center_content{
+  text-align-last: center;
+}
+.explore_more>div>a:hover{
+  text-decoration: none;
+  color:#790000;  
+}
+.button_times{
+  color: #fff;
+  font-size: large;
+}
+.font_impact{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+.justify_text{
+  text-align: justify;
+}
+/* overlay sidebar
+last code edited by - Devang
+last modified date - 6th May, 2020 */
+
+aside {
+  position: fixed;
+  width: 35%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background:  #790000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+  z-index: 1100;
+}
+.open {
+  opacity: 1;
+  visibility: visible;
+}
+.sidebar {
+  text-align: right;
+  height: 95vh;
+  margin-right:100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+ .sidebar> ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .sidebar>ul> li {
+      align-items: right;
+      flex: 1;
+      line-height: 15vh;
+  }
+  .sidebar>ul>li> a {
+    font-size: 1.5em;
+    transition: all 0.5s ease;
+    display: block;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);   
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .sidebar>ul>.active  a{
+    display: block;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);   
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .sidebar>ul>li> a:hover{
+    color: rgba(255, 255, 255, 1); 
+  }
+  .close {
+    position: fixed;
+    top: 40px;
+    right: 60px;
+    color: white;
+    z-index: 3;
+    cursor: pointer;
+    font-family: sans-serif;
+  }
+  .close > span, .close>  span:before,.close>  span:after {
+    border-radius: 4px;
+    height: 5px;
+    width: 35px;
+    background: white;
+    position: absolute;
+    display: block;
+    content: '';
+  }
+  .close>span {
+    background: transparent;
+  }
+  .close>span:before {
+  transform: rotate(45deg);
+  }
+  .close>span:after {
+  transform: rotate(-45deg);
+  }
+
+.outer-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 85px;
+    height: 85px;
+    cursor: pointer;
+}
+@media screen and (min-width: 600px) {
+  .sidebar ul li a {
+    font-size: 3em;
+  }
+}
+
+/* overlay hover on work and services in index page
+last code edited by - Devang
+last modified date - 5th May, 2020
+ */
+
+.overlay_work_hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:#790000;
+}
+
+.work:hover .overlay_work_hover {
+  opacity: 0.8;
+}
+.work>.card>a{
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.overlay_work_hover>.card-body{
+  padding-top: 45%;
+}
+
+/* overlay hover on our team about page
+last code edited by - Devang
+last modified date - 5th May, 2020
+ */
+
+ .overlay_about_hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:#790000;
+}
+.about>.card>a{
+  text-decoration: none;
+  color: #fff;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 1px;
+}
+.about:hover .overlay_about_hover {
+  opacity: 0.8;
+}
+/* overlay hover on services, services page
+last code edited by - Devang
+last modified date - 6th May, 2020
+ */
+
+ .overlay_services_hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:#790000;
+}
+.services>a>.card-body{
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding-top: 60px;
+}
+.services:hover .overlay_services_hover {
+  opacity: 1;
+}
+/* about page meet our team team text css
+last code edited by - Devang
+last modified date - 5th May, 2020
+*/
+.small_text{
+  font-size: 1rem;
+  text-align: left;
+  font-weight: bold;
+}
+/* overlay hover on services
+last code edited by - Devang
+last modified date - 4th May, 2020
+ */
+.services {
+  transition: box-shadow .3s;
+  border-radius:10px;
+  border: 0px solid #ccc;
+  background: #fff;
+}
+.services:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+.services>a:hover{
+  text-decoration: none;
+  color: #000;
+}
+.services>a{
+  text-decoration: none;
+  color: #000;
+}
+
+/* gradient effect on connect section
+last code edited by - Devang
+last modified date - 5th May, 2020 */
+
+.connect_gradient{
+  position:relative;
+  display:inline-block;
+}
+.connect_gradient:after {
+  content:'';
+  position:absolute;
+  left:0; top:0;
+  width:100%; height:100%;
+  display:inline-block;
+  background:
+    linear-gradient( #fff, transparent),
+    linear-gradient(to right, #696969, transparent);
+    background-blend-mode: screen;
+}
+.connect_gradient img{
+  display:block;
+}
+
+/* gradient effect on home our offering section
+last code edited by - Devang
+last modified date - 5th May, 2020 */
+
+.home_gradient{
+  position:relative;
+  display:inline-block;
+}
+.home_gradient:after {
+  content:'';
+  position:absolute;
+  left:0; top:0;
+  width:100%; height:100%;
+  display:inline-block;
+  background:
+    linear-gradient(to top,#fff, transparent),
+    linear-gradient(to right, #696969, transparent);
+    background-blend-mode: screen;
+}
+.home_gradient img{
+  display:block;
+}
+/* gradient effect on about page first image
+last code edited by - Devang
+last modified date - 5th May, 2020 */
+
+.about_services_blog_gradient{
+  position:relative;
+  display:inline-block;
+}
+.about_services_blog_gradient:after{
+  content:'';
+  position:absolute;
+  left:0; top:0;
+  width:100%; height:100%;
+  display:inline-block;
+  background:
+    linear-gradient(to top,#fff, transparent),
+    linear-gradient(to right, #790000, transparent);
+    background-blend-mode: screen;
+}
+.about_services_blog_gradient img{
+  display:block;
+}
