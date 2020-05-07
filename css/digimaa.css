@@ -115,6 +115,9 @@ last modified date - 5th May, 2020
 .justify_text{
   text-align: justify;
 }
+.hrule{
+  background-color: rgba(95, 2, 2, 0.7);
+}
 /* overlay sidebar
 last code edited by - Devang
 last modified date - 6th May, 2020 */
@@ -394,4 +397,18 @@ last modified date - 5th May, 2020 */
 }
 .about_services_blog_gradient img{
   display:block;
+}
+
+/* explore_services page section highlight css
+last code edited by - Devang
+last modified date - 6th May, 2020 */
+.highlight{
+  background:
+    linear-gradient(to right,rgba(95, 2, 2, 0.7),transparent);
+    background-blend-mode: screen;
+  color: rgba(53, 0, 0, 0.863);
+}
+
+.blog{
+  border: 0;
 }
