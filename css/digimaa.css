@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Impact');
-
+@import url('https://fonts.googleapis.com/css?family=Century+Gothic');
+body{
+  font-family: 'Century Gothic', Arial, Helvetica, sans-serif;
+}
 /* 
 .v_center
 used in admin login page to get card vertically and horizontally center
@@ -32,9 +35,9 @@ last code edited by - Devang
 last modified date - 4th May, 2020
  */
 .footer__contact{
-  background-color:#790000;
+  background-color:rgba(156, 28, 32, 1);
   text-transform: uppercase;
-  color: #fff;
+  color: rgba(255, 255, 255, 1);
 }
 .footer__contact--center{
   text-align-last: center;
@@ -46,7 +49,7 @@ last modified date - 4th May, 2020
     top: 0px;  
 }
 .footer__contact--last>a{
-  color: #fff;
+  color: rgba(255, 255, 255, 1);
   padding: 5px;
 }
 footer>.footer__content{
@@ -54,10 +57,10 @@ footer>.footer__content{
   padding-bottom: 5px;
 }
 .footer__info{
-  background-color:#696969;
+  background-color:rgba(76, 87, 96, 1);
 }
 .footer__info--center{
-  color:#DCDCDC;
+  color:rgba(220, 220, 220, 1);
   text-align-last: center;
 }
 .footer__info--center>p{
@@ -75,48 +78,54 @@ last modified date - 4th May, 2020
 /* 
 quick easy
 last code edited by - Devang
-last modified date - 5th May, 2020
+last modified date - 7th May, 2020
 */
 .uppercase{
   text-transform: uppercase;
 }
 
 .bold_text{
-  font-weight: 900;
+  font-weight: 500;
 }
 .card-img-top{
   height: 250px;
 }
 .red__text{
-  color:#790000;
+  color:rgba(156, 28, 32, 1);
   font-size: x-large;
 }
 .head_text{
-  color:grey;
+  color:rgba(76, 87, 96, 1);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 }
 .center_content{
   text-align-last: center;
 }
 .explore_more>div>a:hover{
   text-decoration: none;
-  color:#790000;  
+  color:rgba(156, 28, 32, 1);  
 }
 .button_times{
-  color: #fff;
+  color: rgba(255, 255, 255, 1);
   font-size: large;
 }
 .font_impact{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-weight: 900;
-  letter-spacing: 3px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.font_century_gothic{
+  font-family: 'Century Gothic', Arial, Helvetica, sans-serif;
 }
 .justify_text{
   text-align: justify;
 }
 .hrule{
   background-color: rgba(95, 2, 2, 0.7);
+}
+.bold_title{
+  font-weight: 900;
 }
 /* overlay sidebar
 last code edited by - Devang
@@ -128,7 +137,7 @@ aside {
   height: 100%;
   top: 0;
   right: 0;
-  background:  #790000;
+  background:  rgba(159, 44, 47, 1);
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s ease;
@@ -179,7 +188,7 @@ aside {
     position: fixed;
     top: 40px;
     right: 60px;
-    color: white;
+    color:rgba(255, 255, 255, 1);
     z-index: 3;
     cursor: pointer;
     font-family: sans-serif;
@@ -188,7 +197,7 @@ aside {
     border-radius: 4px;
     height: 5px;
     width: 35px;
-    background: white;
+    background:rgba(255, 255, 255, 1);
     position: absolute;
     display: block;
     content: '';
@@ -232,7 +241,7 @@ last modified date - 5th May, 2020
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color:#790000;
+  background-color:rgba(156, 28, 32, 1);
 }
 
 .work:hover .overlay_work_hover {
@@ -240,7 +249,7 @@ last modified date - 5th May, 2020
 }
 .work>.card>a{
   text-decoration: none;
-  color: #fff;
+  color: rgba(255, 255, 255, 1);
   letter-spacing: 1px;
 }
 .overlay_work_hover>.card-body{
@@ -262,11 +271,11 @@ last modified date - 5th May, 2020
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color:#790000;
+  background-color:rgba(156, 28, 32, 1);
 }
 .about>.card>a{
   text-decoration: none;
-  color: #fff;
+  color: rgba(255, 255, 255, 1);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   letter-spacing: 1px;
 }
@@ -288,11 +297,11 @@ last modified date - 6th May, 2020
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color:#790000;
+  background-color:rgba(156, 28, 32, 1);
 }
 .services>a>.card-body{
   text-decoration: none;
-  color: #fff;
+  color: rgba(255, 255, 255, 1);
   font-size: 16px;
   letter-spacing: 1px;
   padding-top: 60px;
@@ -314,21 +323,21 @@ last code edited by - Devang
 last modified date - 4th May, 2020
  */
 .services {
-  transition: box-shadow .3s;
+  transition: box-shadow 0.3s;
   border-radius:10px;
-  border: 0px solid #ccc;
-  background: #fff;
+  border: 0px solid rgba(204, 204, 204, 1);
+  background: rgba(255, 255, 255, 1);
 }
 .services:hover {
-  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  box-shadow: 0 0 11px rgba(33,33,33,0.2); 
 }
 .services>a:hover{
   text-decoration: none;
-  color: #000;
+  color: rgba(0, 0, 0, 1);
 }
 .services>a{
   text-decoration: none;
-  color: #000;
+  color: rgba(0, 0, 0, 1);
 }
 
 /* gradient effect on connect section
@@ -346,8 +355,8 @@ last modified date - 5th May, 2020 */
   width:100%; height:100%;
   display:inline-block;
   background:
-    linear-gradient( #fff, transparent),
-    linear-gradient(to right, #696969, transparent);
+    linear-gradient( rgba(255, 255, 255, 1), transparent),
+    linear-gradient(to right, rgba(171, 173, 173, 1), transparent);
     background-blend-mode: screen;
 }
 .connect_gradient img{
@@ -369,8 +378,8 @@ last modified date - 5th May, 2020 */
   width:100%; height:100%;
   display:inline-block;
   background:
-    linear-gradient(to top,#fff, transparent),
-    linear-gradient(to right, #696969, transparent);
+    linear-gradient(to top,rgba(255, 255, 255, 1), transparent),
+    linear-gradient(to right, rgba(171, 173, 173, 1), transparent);
     background-blend-mode: screen;
 }
 .home_gradient img{
@@ -391,8 +400,8 @@ last modified date - 5th May, 2020 */
   width:100%; height:100%;
   display:inline-block;
   background:
-    linear-gradient(to top,#fff, transparent),
-    linear-gradient(to right, #790000, transparent);
+    linear-gradient(to top,rgba(255, 255, 255, 1), transparent),
+    linear-gradient(to right, rgba(156, 28, 32, 1), transparent);
     background-blend-mode: screen;
 }
 .about_services_blog_gradient img{
@@ -404,11 +413,133 @@ last code edited by - Devang
 last modified date - 6th May, 2020 */
 .highlight{
   background:
-    linear-gradient(to right,rgba(95, 2, 2, 0.7),transparent);
+    linear-gradient(to right,rgba(156, 28, 32, 0.7),transparent);
     background-blend-mode: screen;
   color: rgba(53, 0, 0, 0.863);
 }
 
-.blog{
+
+/* blog page blog_img and card css
+last code edited by - Devang
+last modified date - 7th May, 2020 */
+.blog_border{
   border: 0;
+}
+.v_line2{
+  float: left; 
+  padding-right: 3px;
+  width: 10px;
+  height: 90px;
+}
+
+.blog_img{
+  filter: grayscale(1);;
+  height: 20%;
+}
+.blog_title{
+  color:rgba(76, 87, 96, 0.7);
+  font-weight: 900;
+}
+.overlay_blog_hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+/* explore blog page blog_img and card css
+last code edited by - Devang
+last modified date - 7th May, 2020 */
+.explore_blog_img{
+  position:relative;
+  width:100%;
+  }
+  
+.explore_blog_img>img{
+  width:100%;
+  height:400px;
+  display:block;
+  filter: grayscale(1) contrast(50%);
+  }
+  
+.explore_blog_img>.overlay_explore_img{
+  background:linear-gradient(to right,rgba(156, 28, 32, 0.75),90%,transparent);
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  }
+
+/* overlay hover on work page
+last code edited by - Devang
+last modified date - 7th May, 2020
+ */
+
+ .overlay_work_page_hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:rgba(156, 28, 32, 1);
+}
+.work_page_img{
+  height: 350px;;
+}
+
+.work_page:hover .overlay_work_page_hover {
+  opacity: 0.8;
+}
+.work_page>.card>a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 1px;
+}
+.overlay_work_page_hover>.card-body{
+  padding-top: 35%;
+}
+
+/* gradient effect on contact page
+last code edited by - Devang
+last modified date - 7th May, 2020 */
+
+.contact_gradient{
+  position:relative;
+  display:inline-block;
+}
+.contact_gradient:after {
+  content:'';
+  position:absolute;
+  left:0; top:0;
+  width:100%; height:100%;
+  display:inline-block;
+  background:
+    linear-gradient(to right, rgba(171, 173, 173, 0.7),100%,transparent);
+}
+.contact_gradient img{
+  display:block;
+}
+
+/* bootstrap form control custom css
+last code edited by - Devang
+last modified date - 7th May, 2020 */
+.form-control:focus {
+  border-color: rgba(0, 0, 0, 1);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+  border-radius: 0;
+}
+.form-control {
+  border-radius: 0;
+}
+.btn_color{
+  background-color: rgba(156, 28, 32, 1);
+  border-radius: 0;
+  color: rgba(255, 255, 255, 1);
 }
