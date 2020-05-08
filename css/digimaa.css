@@ -449,9 +449,26 @@ last modified date - 7th May, 2020 */
   height: 100%;
   width: 100%;
 }
+
 /* explore blog page blog_img and card css
 last code edited by - Devang
-last modified date - 7th May, 2020 */
+last modified date - 8th May, 2020 */
+
+.explore_blog>.card>.card-body>.row>div>.blog_title{
+  font-size: 0.84rem;
+}
+.overlay_explore_blog_page_hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+.flickity-page-dots{
+  display: none;
+}
 .explore_blog_img{
   position:relative;
   width:100%;
@@ -542,4 +559,19 @@ last modified date - 7th May, 2020 */
   background-color: rgba(156, 28, 32, 1);
   border-radius: 0;
   color: rgba(255, 255, 255, 1);
+}
+.btn_custom_link{
+  color:rgba(0, 0, 0, 1);
+}
+.btn_custom_link:hover{
+  text-decoration: none;
+  color:rgba(0, 0, 0, 1);
+}
+
+/* contact page connect button css
+last code edited by - Devang
+last modified date - 8th May, 2020 */
+
+.connect>.btn-outline-light:hover{
+  color:rgba(0, 0, 0, 1);
 }
