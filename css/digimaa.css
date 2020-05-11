@@ -106,6 +106,14 @@ last modified date - 7th May, 2020
   text-decoration: none;
   color:rgba(156, 28, 32, 1);  
 }
+.right_arrow{
+  font-size: xx-large;
+  position: relative;
+  right:10px;
+  top:5px;
+  color:rgba(76, 87, 96, 0.7);
+
+}
 .button_times{
   color: rgba(255, 255, 255, 1);
   font-size: large;
@@ -287,7 +295,7 @@ last code edited by - Devang
 last modified date - 6th May, 2020
  */
 
- .overlay_services_hover {
+ .overlay_services_box_hover {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -299,15 +307,25 @@ last modified date - 6th May, 2020
   transition: .5s ease;
   background-color:rgba(156, 28, 32, 1);
 }
-.services>a>.card-body{
+.services_box>a>.card-body{
   text-decoration: none;
   color: rgba(255, 255, 255, 1);
   font-size: 16px;
   letter-spacing: 1px;
   padding-top: 60px;
 }
-.services:hover .overlay_services_hover {
+.services_box:hover .overlay_services_box_hover {
   opacity: 1;
+}
+.services_box>a:hover{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+}
+.services_box{
+  box-shadow: 0 20px 20px rgba(0,0,0,0.05), 20px 0px 20px rgba(0,0,0,0.05),0px 0px 4px rgba(0,0,0,0.05);
+}
+.services_box:hover{
+  box-shadow:none;
 }
 /* about page meet our team team text css
 last code edited by - Devang
@@ -430,6 +448,8 @@ last modified date - 7th May, 2020 */
   padding-right: 3px;
   width: 10px;
   height: 90px;
+  position: relative;
+  right:5px;
 }
 
 .blog_img{
@@ -575,3 +595,18 @@ last modified date - 8th May, 2020 */
 .connect>.btn-outline-light:hover{
   color:rgba(0, 0, 0, 1);
 }
+
+input {
+        display: block;
+}
+
+input {
+        width: 100%;
+        padding: 10px;
+        outline: 0;
+        border: 2px solid #B0BEC5;
+}
+input:invalid {
+        border-color: #DD2C00;
+}
+
